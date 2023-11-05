@@ -1,15 +1,16 @@
 body {
-    background-color: green;
+    background-color: #fff;
 }
 * {
     box-sizing: border-box;
     border: 0 none;
-    margin: 0;
+    margin: 1em;
     padding: 0;
 }
 
 ol, ul {
     padding-left: 1.5em;
+    background-color: #3E71C7;
 }
 
 .hidden {
@@ -40,12 +41,14 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
+    
 }
 
 /* Title */
 
 .title, .logo {
-    padding: 3em 3em 3em 0;
+    padding: 1em ;
+    max-width: 50%;
 }
 
 @media (max-width: 767px) {
@@ -62,6 +65,7 @@ body {
 
 .title * {
     color: #111;
+    float: left;
 }
 
 .title p {
@@ -74,6 +78,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    background-color: #3E71C7;
 }
 
 .footer a {
@@ -90,6 +95,7 @@ body {
     font-family: sans-serif;
     line-height: 1.5rem;
     color: #444;
+    
 }
 
 p, td, th, li, dd {
@@ -104,7 +110,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
+}
+.me {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
