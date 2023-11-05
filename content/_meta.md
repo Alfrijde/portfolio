@@ -1,8 +1,8 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: assets\img\galaxy-color-desktop-wallpaper-galaxy.png
 Tagline: My portfolio.
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Link till Viktorias github repo.
+      url: https://github.com/Alfrijde/portfolio
       icon: github
 ---
