@@ -2,7 +2,11 @@
 Logo: assets\img\galaxy-color-desktop-wallpaper-galaxy.png
 Tagline: My portfolio.
 Social:
-    - title: Link till Viktorias github repo.
+    - title: Länk till Viktorias github repo.
       url: https://github.com/Alfrijde/portfolio
-      icon: github
+      icon: fab fa-github
+      
+    - title: Länk till Viktorias instagram.
+      url: https://www.instagram.com/skogsrao/
+      icon: fab fa-instagram
 ---
