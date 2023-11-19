@@ -6532,7 +6532,7 @@ body {
 
 @media (min-width: 767px) {
   .main {
-    max-width: 70%;
+    width: 70%;
   }
 }
 .header, .footer {
@@ -6591,4 +6591,76 @@ img {
 
 .footer .social {
   font-size: 2rem;
+}
+
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1em 1em;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.box1 {
+  grid-column: span 1;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.box2 {
+  grid-column: span 2;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.box3 {
+  grid-column: span 3;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+@media (max-width: 500px) {
+  .landingpage h1 {
+    grid-column: span 1;
+    justify-self: center;
+  }
+  .box2 {
+    grid-column: span 1;
+    justify-self: center;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  .box3 {
+    grid-column: span 1;
+    justify-self: center;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.blog .left {
+  order: 1;
+  flex-grow: 1;
+}
+
+.blog .main {
+  order: 2;
+  flex-grow: 3;
+}
+
+@media (max-width: 500px) {
+  .blog .left {
+    display: none;
+  }
 }
