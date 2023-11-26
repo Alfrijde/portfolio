@@ -2,11 +2,11 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
-    background-color: #3E71C7;
+    background-color: $nav-color;
 }
 
 .footer a {
-    color: #222;
+    color: $font-color;
     text-decoration: none;
 }
 
