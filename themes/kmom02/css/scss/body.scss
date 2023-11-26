@@ -1,0 +1,82 @@
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 1em;
+    padding: 0;
+}
+
+.nav{
+    ol, ul {
+        padding-left: 1.5em;
+        background-color: #3E71C7;
+        font-family: 'Quando', serif;
+        text-decoration: none;
+        
+    }
+
+    li:hover {
+        background-color: rgb(0,255,255);
+    }
+    
+    li:active{
+        background-color: #7fffd4;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main {
+    flex: 1 0 auto;
+    background-color: $background-color-body;
+    margin: auto;
+}
+@media (min-width: 767px){
+    .main{
+        width: 70%;
+    }
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+body {
+    
+    line-height: 1.5rem;
+    color: #444;
+    
+}
+
+p, td, th, li, dd {
+    font-family: 'Forum', serif;
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+h1{
+
+    font-family: 'Alegreya SC', serif;
+
+}
+
+h2, h3, h4, h5, h6 {
+    
+    font-family: 'Quando', serif;
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
