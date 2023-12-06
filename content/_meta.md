@@ -1,5 +1,5 @@
 ---
-Logo: assets\img\galaxy-color-desktop-wallpaper-galaxy.png
+Logo: image/galaxy-color-desktop-wallpaper-galaxy.png
 Tagline: My portfolio.
 Social:
     - title: Länk till Viktorias github repo.
