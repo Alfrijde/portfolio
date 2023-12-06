@@ -1,0 +1,139 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 100px, 100px, 100px, 100px;
+    gap: 0.2em, 0.2em;
+}
+
+.gallery h1 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.gallery img {
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+
+}
+
+.gallery source {
+    display: none;
+}
+
+.gallery {
+    .pic1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+        
+    }   
+
+    .pic2 {
+        grid-column-start:  2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       
+        
+    }
+
+    .pic3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        
+    }
+    
+    .pic4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    .pic5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .gallery h1 {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+       
+    }
+
+    .gallery {
+        .pic1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            justify-self: center;
+        }   
+
+        .pic2 {
+            grid-column-start:  1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        
+            justify-self: center;
+        }
+
+        .pic3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            justify-content: center;
+        }
+        
+        .pic4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        
+        .pic5 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 6;
+            grid-row-end: 7;
+        }
+    }
+
+}
+
+.embed-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
