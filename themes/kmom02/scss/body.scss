@@ -1,6 +1,7 @@
 
 body {
     background-color: $background-color;
+    
 }
 
 * {
@@ -9,14 +10,19 @@ body {
     margin: 1em;
     padding: 0;
 }
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .nav{
     ol, ul {
-        padding-left: 1.5em;
+        padding:auto;
         background-color: $nav-color;
         font-family: 'Quando', serif;
         text-decoration: none;
         text-align: center;
+
         
         
     }
@@ -49,6 +55,7 @@ body {
     flex: 1 0 auto;
     background-color: $background-color-body;
     margin: auto;
+    box-shadow: 0 0 5px 10px $background-color-body;
 }
 @media (min-width: 767px){
     .main{
